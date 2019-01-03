@@ -1,0 +1,10 @@
+from sklearn import Tree
+#dados = [Galinha, Galinha, Cavalo, Cavalo]
+dados = [[7,0.6,40],[7,0.6,42],[37,600,37],[37,600,38]]
+#definir a saída do classificador, 0 representa galinha e 1 o cavalo
+animais = [0,0,1,1]
+#Classificador
+classificador = tree.DecisionTreeClassifier()
+#Ajustar os dados
+classificador.fit(dados,animais)
+print(classificador.predict([[7,0.7,41]]))
